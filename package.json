@@ -1,0 +1,21 @@
+{
+  "name": "appnest-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config ./src/index.js"
+  },
+  "author": "Rahul das",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4",
+    "multer": "^1.4.5-lts.1"
+  }
+}
