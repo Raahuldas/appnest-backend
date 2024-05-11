@@ -7,7 +7,6 @@ import { uploadOnCloudinary } from "../utils/cloudinary.js";
 const sendCareerForm = asyncHandler(async (req, res) => {
     const { name, email, phone, appliedFor } = req.body;
 
-    // if (!name || !email || !phone || !appliedFor) {
     if ([name, email, phone, appliedFor].some(item => item?.trim() === "")) {
         throw new ApiError(400, "all fields are required")
     }
@@ -39,7 +38,6 @@ const sendCareerForm = asyncHandler(async (req, res) => {
     if (!career) {
         throw new ApiError(401, "error while submitting form")
     }
-    console.log(career);
 
     return res.status(200).json(new ApiResponse(200, career, "sumitted successfully"))
 });
