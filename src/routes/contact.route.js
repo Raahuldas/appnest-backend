@@ -4,6 +4,6 @@ import { createContact, getAllContactDetails } from "../controllers/contact.cont
 const router = Router();
 
 router.route("/create").post(createContact);
-router.route("/get-all").get(getAllContactDetails);
+router.route("/get-all").get(getAllContactDetails); 
 
 export default router;

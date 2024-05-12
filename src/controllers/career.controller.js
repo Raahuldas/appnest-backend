@@ -22,7 +22,7 @@ const sendCareerForm = asyncHandler(async (req, res) => {
     const resume = await uploadOnCloudinary(resumeLocalPath);
 
     if (!resume) {
-        throw new ApiError(500, "error while uploading resume")
+        throw new ApiError(500, "error while uploading resume");
     }
 
     const career = await Career.create(
